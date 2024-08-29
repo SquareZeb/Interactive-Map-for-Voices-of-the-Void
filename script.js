@@ -96,7 +96,6 @@ var markerTypes = {
     'Tile': 'Images/Icons/MapMarkers/1.webp',
     'Skull': 'Images/Icons/MapMarkers/2.webp',
     'Satellite': 'Images/Icons/MapMarkers/3.webp',
-    'Classic Satellite': 'Images/Icons/MapMarkers/4.webp',
     'Argemia': 'Images/Icons/MapMarkers/5.webp',
     'Diggable': 'Images/Icons/MapMarkers/6.webp',
     'Landmark': 'Images/Icons/MapMarkers/7.webp',
@@ -120,13 +119,12 @@ var markersData = [
     { lat: -7.2099, lng: 0.1758, title: 'Burger (X: -2, Y: 27)<br>Located on top of the vent cover.', type: 'Burger' },
     { lat: 80.5969, lng: 38.6279, title: 'Burger (X: 157, Y: -584)<br>(Requires: Shovel, Metal Detector) Dig in that specific spot.', type: 'Burger' },
     { lat: 81.0043, lng: -161.0376, title: 'Burger (X: -651, Y: -587)<br>Located in the AB Cave entrance.', type: 'Burger' },
-    { lat: 8.2985, lng: -153.8086, title: 'Burger (X: -621, Y: -28)<br>Located behind a desk in The Hole.', type: 'Burger' },
+    { lat: 7.2317, lng: -154.5557, title: 'Burger (X: -622, Y: -25)<br>Located under the generator in The Hole.', type: 'Burger' },
     { lat: -10.3582, lng: 158.0713, title: 'Burger (X: 639, Y: 44)<br>Next to the Ship Engine.', type: 'Burger' },
     { lat: -45.0270, lng: -23.2031, title: 'Burger (X: -100, Y: 203)<br>Located on the side of Juliett Satellite Dishs first level.', type: 'Burger' },
     { lat: -1.7795, lng: -1.9336, title: 'Burger (X: -10, Y: 6)<br>Located on top of the globe.', type: 'Burger' },
-    { lat: 2.7894, lng: 11.5356, title: 'Burger (X: 42, Y: -12)<br>Located in the middle of grass.', type: 'Burger' },
     { lat: 7.8416, lng: 5.4272, title: 'Burger (X: 21, Y: -29)<br>Located on top of one of the Radio Poles on top of the Radio Tower.', type: 'Burger' },
-    { lat: -50.8476, lng: -137.5049, title: 'Burger (X: -553, Y: 238)<br>Located out in the open near TR-1.', type: 'Burger' },
+    { lat: -49.7813, lng: -136.4941, title: 'Burger (X: -549, Y: 234)<br>Located on the roof of TR-1 however it is wedged in between the vent and the wall near a little star drawing.', type: 'Burger' },
     { lat: 80.7958, lng: -168.3984, title: 'Burger (X: -683, Y: -581)<br>Located further up in AB Cave, next to a pumpkin.', type: 'Burger' },
     { lat: -78.7335, lng: 53.0200, title: 'Burger (X: 215, Y: 541)<br>Located on top of a Stonehenge block piece.', type: 'Burger' },
     { lat: 46.4530, lng: 128.6499, title: 'Burger (X: 518, Y: -213)<br>Located on top of some supply boxes.', type: 'Burger' },
@@ -172,30 +170,6 @@ var markersData = [
     { lat: -25.2049, lng: -48.5156, title: 'Kilo (X: -200, Y: 100)<br>Satellite Dish', type: 'Satellite' },
     { lat: 43.7076, lng: 24.3896, title: 'Delta (X: 100, Y: -200)<br>Satellite Dish', type: 'Satellite' },
     { lat: 23.3914, lng: 49.6787, title: 'Echo (X: 200, Y: -100)<br>Satellite Dish', type: 'Satellite' },
-    { lat: 76.7505, lng: -125.1563, title: 'Regula (X: -500, Y: -500)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 59.7010, lng: -74.9927, title: 'Noemie (X: -300, Y: -300)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 76.9306, lng: 1.1426, title: 'Sergio (X: 0, Y: -500)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 76.6697, lng: 125.7275, title: 'Teresa (X: 500, Y: -500)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 0.4834, lng: -123.4644, title: 'Yacine (X: -500, Y: 0)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -76.7454, lng: -1.4941, title: 'Walter (X: 0, Y: 500)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -58.8365, lng: 74.8608, title: 'Pascale (X: 300, Y: 300)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 58.9613, lng: 76.9043, title: 'Orell (X: 300, Y: -300)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 0.5273, lng: 124.9585, title: 'Ulrich (X: 500, Y: 0)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -76.5985, lng: 123.7061, title: 'Vanessa (X: 500, Y: 500)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -76.6899, lng: -124.9585, title: 'Xaviera (X: -500, Y: 500)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -59.1715, lng: -75.1347, title: 'Quirin (X: -300, Y: 300)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 1.4720, lng: 49.7021, title: 'Fabia (X: 200, Y: 0)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -43.8028, lng: -24.4556, title: 'Joelle (X: -100, Y: 200)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -43.9454, lng: 0.3955, title: 'Ingo (X: 0, Y: 200)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -44.3493, lng: 23.9532, title: 'Hagan (X: 100, Y: 200)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 44.3553, lng: -23.3569, title: 'Barbel (X: -100, Y: -200)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 44.2917, lng: 1.3661, title: 'Caspari (X: 0, Y: -200)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -23.7451, lng: 49.1528, title: 'Giotto (X: 200, Y: 100)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -1.0766, lng: -48.1641, title: 'Lea (X: -200, Y: 0)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 24.1981, lng: -48.1962, title: 'Marcel (X: -200, Y: -100)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: -25.3639, lng: -49.4385, title: 'Khalid (X: -200, Y: 100)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 43.9454, lng: 25.3564, title: 'Delaina (X: 100, Y: -200)<br>Satellite Dish', type: 'Classic Satellite' },
-    { lat: 23.6445, lng: 50.6030, title: 'Eggen (X: 200, Y: -100)<br>Satellite Dish', type: 'Classic Satellite' },
     { lat: 30.2401, lng: 155.7642, title: 'Red Argemia (X: 626, Y: -128)<br>Located in the Deep Pit next to Uniform Satellite Dish, near the fence.', type: 'Argemia' },
     { lat: -70.0581, lng: -77.5195, title: 'Blue Argemia (X: -315, Y: 398)<br>Located right next to Quebec Satellite Dish, in a river with bumpy beaches.', type: 'Argemia' },
     { lat: -84.8342, lng: 76.0254, title: 'Green Argemia (X: 239, Y: 828)<br>Located on the highest point of the map, outside the fence, near Victor Satellite Dish.', type: 'Argemia', arrowRotation: 0, arrowHeight: 20, arrowWidth: 8, arrowColor: 'blue' },
@@ -236,7 +210,7 @@ var markersData = [
     { lat: -5.9658, lng: 6.0205, title: 'Bunker Warning (X: 20, Y: 23)<br>Note', type: 'Note' },
     { lat: 7.8452, lng: 4.8836, title: 'Placeholder Test (X: 19, Y: -31)<br>Note (Removed)', type: 'Note' },
     { lat: -9.5141, lng: 5.3613, title: 'Behind You (X: 17, Y: 36)<br>Note (Removed)', type: 'Note' },
-    { lat: 61.6690, lng: 59.0845, title: 'The Hole Preparation (X: 233, Y: -322)<br>Note', type: 'Note' },
+    { lat: 61.6690, lng: 59.0845, title: 'The Hole Preparation (X: 233, Y: -322)<br>Note (Removed)', type: 'Note' },
     { lat: -11.3723, lng: -86.9238, title: 'The Hole Expedition (X: -351, Y: 46)<br>Note', type: 'Note' },
     { lat: 8.1462, lng: -154.0503, title: 'The Hole Discovery (X: -620, Y: -29)<br>Note', type: 'Note' },
     { lat: 30.0311, lng: 155.6543, title: 'Mockery (X: 626, Y: -128)<br>Note (Removed)', type: 'Note' },
@@ -248,18 +222,18 @@ var markersData = [
     { lat: -1.8454, lng: 1.6479, title: 'Ariral Vaccine Instructions (X: 2, Y: 6)<br>Note (Event Specific)', type: 'Note' },
     { lat: -82.1485, lng: 79.1016, title: 'Music Warning (X: 388, Y: 531)<br>Note', type: 'Note' },
     { lat: -7.3625, lng: 0.1978, title: 'Figure Encounter (X: -1, Y: 27)<br>Note', type: 'Note' },
-    { lat: 75.4144, lng: -98.0420, title: 'Cryptomining Tips (X: -394, Y: -475)<br>Note', type: 'Note' },
+    { lat: 75.4144, lng: -98.0420, title: 'Cryptomining Tips (X: -394, Y: -475)<br>Note (Removed)', type: 'Note' },
     { lat: -5.4848, lng: -4.0430, title: 'Rocks<br>(X: -19, Y: 19) Note', type: 'Note' },
     { lat: -1.2523, lng: -5.1636, title: 'Recycling (X: -23, Y: 11)<br>Note', type: 'Note' },
     { lat: -2.6577, lng: 0.3955, title: 'A Secret (X: -0, Y: 22)<br>Note', type: 'Note' },
-    { lat: 11.2646, lng: -153.7646, title: 'A Scam (X: -618, Y: -16)<br>Note (Event Specific)', type: 'Note' },
-    { lat: 67.3906, lng: 92.1533, title: 'Pickaxe (X: -391, Y: -384)<br>You can mine crystals in the cave using this.', type: 'Other' },
+    { lat: 11.2646, lng: -153.7646, title: 'A Scam (X: -618, Y: -16)<br>Note (Removed)', type: 'Note' },
+    { lat: 67.3906, lng: 92.1533, title: 'Pickaxe (X: -391, Y: -384)<br>You can mine crystals and coal in the cave using this.', type: 'Other' },
     { lat: 80.3791, lng: -166.6406, title: 'Furfur Altar Piece (X: -671, Y: -563)<br>Furfur Altar Piece', type: 'Other' },
     { lat: -34.5609, lng: -78.9697, title: 'Earth Rune Box (X: -320, Y: 148)<br>Farm Earth Runes', type: 'Other' },
     { lat: 84.5162, lng: 129.7705, title: 'Water Rune Box (X: 627, Y: -874)<br>Farm Water Runes', type: 'Other', arrowRotation: 180, arrowHeight: 20, arrowWidth: 8, arrowColor: 'blue'  },
     { lat: 77.5231, lng: 0.7031, title: 'Erie Zone (X: 11, Y: -512)<br>Zone where you can farm and obtain Erie Plushes.', type: 'Other' },
     { lat: -10.4345, lng: 4.9668, title: 'Omega Kerfus Blueprint (X: 17, Y: 40)<br>Crafting blueprint for Omega Kerfuses.', type: 'Other' },
-    { lat: 61.8250, lng: 59.3701, title: 'Barrel of MREs (X: 235, Y: -323)<br>Barrel of free food.', type: 'Other' },
+    { lat: 62.3496, lng: 57.8320, title: 'Barrel of MREs (X: 232, Y: -329)<br>Barrel of free food.', type: 'Other' },
     { lat: 39.9097, lng: 132.4512, title: 'Earth Rune Slab (X: 538, Y: -181)<br>Dig in exactly as the coordinates say which would be under a bush.', type: 'Other' },
     { lat: 71.8836, lng: 101.4258, title: 'Water Rune Slab (X: 418, Y: -422)<br>Dig at the deepest point of The Lake.', type: 'Other' },
     { lat: -43.4050, lng: 95.3613, title: 'Air Rune Slab (X: 387, Y:196)<br>You must grab it from the top of the Powerline Pole.', type: 'Other' },
@@ -297,17 +271,20 @@ var markersData = [
     { lat: 48.8647, lng: -161.1035, title: 'Crashed Ariral Tp Chamber (X: -651, Y: -237)<br>Located in the bottom of the valley near the Fence Opening (Event specific).', type: 'Landmark' },
     { lat: -54.1238, lng: 139.1089, title: 'Abandoned Well (X: 564, Y: 265)<br>Located between the Uniform and Victor satellite Dishes.', type: 'Landmark' },
     { lat: 80.0580, lng: -86.3745, title: 'Small Graveyard (X: -347, Y: -563)<br>Located on a hill above Transformer 2.', type: 'Landmark' },
-    { lat: 55.9000, lng: 168.1348, title: 'Sewer (X: 675, Y: -277)<br>In the river near the Danger Forest.', type: 'Landmark' },
+    { lat: 55.9000, lng: 168.1348, title: 'Shrimp Sewer (X: 675, Y: -277)<br>In the river near the Danger Forest.', type: 'Landmark' },
     { lat: 76.4758, lng: 142.4268, title: 'Leaking Nuclear Barrels (X: 570, Y: -517)<br>In the river near the Danger Forest.', type: 'Landmark' },
     { lat: -61.8872, lng: -51.7236, title: 'Abandoned Sedan (X: -209, Y: 307)<br>In the river near the Quebec Satellite Dish.', type: 'Landmark' },
     { lat: -5.7909, lng: 101.2500, title: 'Wooded Shack (X: 408, Y: 22)<br>Located in a dense forest near Uniform Satellite Dish.', type: 'Landmark' },
-    { lat: -80.4886, lng: 2.7246, title: 'Circle of Benches (X: 12, Y: 580)<br>Located between the Whiskey Satellite Dish and the Bomb Shelter.', type: 'Landmark' },
-    { lat: -82.1545, lng: 14.6558, title: 'Bomb Shelter (X: 60, Y: 625)<br>Located near the Circle of Benches.', type: 'Other' },
+    { lat: -80.4886, lng: 2.7246, title: 'William The Protector (X: 12, Y: 580)<br>Located between the Whiskey Satellite Dish and the Bomb Shelter.', type: 'Landmark' },
+    { lat: -82.1545, lng: 14.6558, title: 'Bomb Shelter (X: 60, Y: 625)<br>Located near the Circle of Benches.', type: 'Landmark' },
     { lat: 81.0523, lng: 156.0059, title: 'Danger Forest (X: -642, Y: -586)<br>Located in the corner of land that is cut off by the river, near Tango Satellite Dish.', type: 'Landmark' },
     { lat: 47.3388, lng: 132.0117, title: 'Closed Up Forest (X: 517, Y: -211)<br>Located near the Deep Pit, throw and jump into ATV over the fence to access.', type: 'Landmark' },
     { lat: -84.8025, lng: 177.4512, title: 'Ritual Altar (X: 1994, Y: 1999)<br>You need to perform the Ritual Warp Event in order to warp to this landmark.', type: 'Landmark', arrowRotation: -45, arrowHeight: 20, arrowWidth: 8, arrowColor: 'blue' },
     { lat: 2.9869, lng: 1.1865, title: 'Green Cabinent Room (X: -1, Y: -14)<br>Innacessible in storymode, you could attempt to glitch or noclip inside the SCP-421 to warp there.<br>Actual landmark is located underneath the map.', type: 'Landmark' },
     { lat: 70.0806, lng: 97.9102, title: 'The Lake (X: 408, Y: -406)<br>Giant lake.', type: 'Landmark' },
+    { lat: 83.6673, lng: 166.3770, title: 'Abandoned Church (X: 662, Y: -654)<br>Located near the Green Campfire spawn in the corner of the fence almost.', type: 'Landmark' },
+    { lat: 8.4072, lng: -137.2852, title: 'Abandoned Housing (X: -553, Y: -56)<br>Located between the Yankee Satellite Dish and The Hole.', type: 'Landmark' },
+    { lat: 70.9740, lng: 100.9424, title: 'Flesh Pit (X: 410, Y: -416)<br>Located underwater in The Lake.', type: 'Landmark' },
     { lat: -84.2672, lng: -93.7793, title: 'Pumpkin (Halloween Special) (X: -382, Y: 695)<br>Located near Guard Post.', type: 'Pumpkin' },
     { lat: -43.4370, lng: -23.8184, title: 'Pumpkin (Halloween Special) (X: -103, Y: 199)<br>Located on the top level of the Juliett Satellite Dish.', type: 'Pumpkin' },
     { lat: -4.0177, lng: -2.0215, title: 'Pumpkin (Halloween Special) (X: -6, Y: 10)<br>Located behind some supply boxes.', type: 'Pumpkin' },
@@ -329,9 +306,6 @@ markersData.forEach(function(marker) {
     }
     if (marker.type === 'Burger') {
         customIcon = createCustomIcon(markerTypes[marker.type], 30, 25, marker.arrowRotation, marker.arrowHeight, marker.arrowWidth, marker.arrowColor);
-    }
-    if (marker.type === 'Classic Satellite') {
-        customIcon = createCustomIcon(markerTypes[marker.type], 46, 70, marker.arrowRotation, marker.arrowHeight, marker.arrowWidth, marker.arrowColor);
     }
     if (marker.type === 'Argemia') {
         customIcon = createCustomIcon(markerTypes[marker.type], 46, 70, marker.arrowRotation, marker.arrowHeight, marker.arrowWidth, marker.arrowColor);
@@ -390,10 +364,6 @@ Object.keys(markerTypes).forEach(function(type) {
         iconHeight = 40;
     }
     if (type === 'Satellite') {
-        iconWidth = 46;
-        iconHeight = 70;
-    }
-    if (type === 'Classic Satellite') {
         iconWidth = 46;
         iconHeight = 70;
     }
