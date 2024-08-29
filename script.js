@@ -68,7 +68,7 @@ var CustomCoordinateSystem = {
 map.on('mousemove', function(e) {
     var leafletCoords = e.latlng;
     var customCoords = CustomCoordinateSystem.latLngToCustom(leafletCoords);
-    coordinatesDiv.innerHTML = `Custom Coordinates: (${customCoords.x.toFixed(4)}, ${customCoords.y.toFixed(4)})`;
+    coordinatesDiv.innerHTML = `Coordinates: (${customCoords.x.toFixed(4)}, ${customCoords.y.toFixed(4)}) [MAY NOT BE ACCURATE]`;
 });
 var CustomBounds = L.latLngBounds(
     CustomCoordinateSystem.customToLatLng({ x: -800, y: -800 }),
