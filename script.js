@@ -16,7 +16,7 @@ L.control.zoom({
 }).addTo(map);
 L.tileLayer('Images/Tiles/{z}/{x}_{y}.webp', {
     maxZoom: 5,
-    attribution: '<img src="Images/Icons/Other/Promo.webp" alt="Icon" style="width:20px; height:20px;"><span style="font-size: 20px;">Created by: </span><a style="font-size: 20px; font-weight: bold; background-color: #007bff;" href="https://discordapp.com/users/813250158384906260"><span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span></a><br>Credits to <a style="font-weight: bold;" href="https://discordapp.com/users/1169983356440690779">somemonkeydude</a> on Discord for the base map.',
+    attribution: '<img src="Images/Icons/Other/Promo.webp" alt="Icon" style="width:20px; height:20px;"><span style="font-size: 20px;">Created by: </span><a style="font-size: 20px; font-weight: bold; background-color: #007bff;" href="https://discordapp.com/users/813250158384906260"><span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span></a>',
     noWrap: true,
     bounds: MapBounds
 }).addTo(map);
