@@ -130,6 +130,7 @@ var markersData = [
     { lat: 46.4530, lng: 128.6499, title: 'Burger (X: 518, Y: -213)<br>Located on top of some supply boxes.', type: 'Burger' },
     { lat: -5.5285, lng: 100.5469, title: 'Burger (X: 405, Y: 24)<br>Located near the Wooded Shack.', type: 'Burger' },
     { lat: 64.1298, lng: 86.3306, title: 'Burger (X: 349, Y: -344)<br>Located under some rocks in a log.', type: 'Burger' },
+    { lat: -78.7077, lng: 3.8672, title: 'Burger (X: 18, Y: 529)<br>Located under some rocks, it is bugged you will have to grab through the ground.', type: 'Burger' },
     { lat: -0.6592, lng: -1.4941, title: 'Tile (X: -9, Y: 2)<br>Located on the secondary roof of the main base.', type: 'Tile' },
     { lat: -4.4340, lng: -16.6333, title: 'Tile (X: -68, Y: 16)<br>Located on the left side of a bridge near the main base.', type: 'Tile' },
     { lat: 7.0137, lng: -154.4238, title: 'Tile (X: -617, Y: -24)<br>Located underneath one of the supply boxes in The Hole.', type: 'Tile' },
