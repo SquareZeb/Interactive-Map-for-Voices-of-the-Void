@@ -230,6 +230,7 @@ var markersData = [
     { lat: 11.2646, lng: -153.7646, title: 'A Scam (X: -618, Y: -16)<br>Note (Removed)', type: 'Note' },
     { lat: 67.3906, lng: 92.1533, title: 'Pickaxe (X: -391, Y: -384)<br>You can mine crystals and coal in the cave using this.', type: 'Other' },
     { lat: 80.3791, lng: -166.6406, title: 'Furfur Altar Piece (X: -671, Y: -563)<br>Furfur Altar Piece', type: 'Other' },
+    { lat: -82.9403, lng: -13.6670, title: 'Bike Helmet (X: -50, Y: 638)<br>Lost Helmet', type: 'Other' },
     { lat: -34.5609, lng: -78.9697, title: 'Earth Rune Box (X: -320, Y: 148)<br>Farm Earth Runes', type: 'Other' },
     { lat: 84.5162, lng: 129.7705, title: 'Water Rune Box (X: 627, Y: -874)<br>Farm Water Runes', type: 'Other', arrowRotation: 180, arrowHeight: 20, arrowWidth: 8, arrowColor: 'blue'  },
     { lat: 77.5231, lng: 0.7031, title: 'Erie Zone (X: 11, Y: -512)<br>Zone where you can farm and obtain Erie Plushes.', type: 'Other' },
