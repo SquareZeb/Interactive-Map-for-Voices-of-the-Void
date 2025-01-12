@@ -1,3 +1,6 @@
+# OUTDATED!!
+# This map will no longer be updated, so it's accuracy is not guarenteed.
+
 # Interactive Map of VOTV
 ## Description:
 An updated and remade version of the interactive map of the game world in **_Voices of the Void (VOTV)_**. The interactive map, based off of the Leaflet API, uses map tiling for better performance and map loading times. The map features different markers and locations for each item, object, event, POI (Point of interest), and landmark. As well as the ability to zoom in (6 zoom levels), pan around, and to select and deselect different groups for better visibility. Each marker has a description, the location of said marker, and generally tip or explanation of how to access it ingame.
@@ -24,5 +27,3 @@ This will bring up the website that is hosting this map.
 
 ## Credits:
 **_Created By: SquareZeb_**
-
-**_Base Map By: somemonkeydude (on discord)_**
