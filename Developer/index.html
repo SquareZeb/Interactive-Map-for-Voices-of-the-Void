@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTV Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        html, body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        #map {
+            position: relative;
+            width: 100%;
+            height: 900px;
+            z-index: 0;
+        }
+        #coordinates {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: white;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .sidebar {
+            color: white;
+            position: absolute;
+            font-weight: bold;
+            top: 10px;
+            right: 5px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+            .sidebar h3 {
+                margin-top: 0;
+            }
+        .custom-marker-container {
+            background: none !important;
+            border: none !important;
+        }
+        .custom-marker {
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: none;
+        }
+            .custom-marker:hover {
+                transform: scale(1.2);
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        .custom-marker-img {
+            display: block;
+            background: none;
+        }
+        .marker-tooltip {
+            font-weight: bold;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 5px solid red;
+        }
+        .marker-toggle {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+            .marker-toggle img {
+                width: 46px;
+                height: 46px;
+                margin-right: 10px;
+                border-radius: 50%;
+                transition: transform 0.3s ease;
+                box-shadow: 0 2px 6px rgba(255, 255, 255, 0.8);
+            }
+            .marker-toggle:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+            .marker-toggle img:hover {
+                transform: scale(1.1);
+            }
+        #toggleButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            background: black;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+            z-index: 1001;
+            transition: right 0.3s ease;
+        }
+            #toggleButton:hover {
+                color: white;
+                background: black;
+                transform: rotate(90deg);
+            }
+        .sidebar.collapsed {
+            transform: translateX(230px);
+        }
+        .custom-popup .leaflet-popup-content-wrapper {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-weight: bold;
+            padding: 1px;
+            border-radius: 5px;
+        }
+        .custom-popup .leaflet-popup-tip {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="sidebar">
+        <h3>Toggle Markers</h3>
+        <div id="markerToggles"></div>
+    </div>
+    <div id="coordinates">Coordinates will display here</div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
