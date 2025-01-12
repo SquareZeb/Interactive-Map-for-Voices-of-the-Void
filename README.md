@@ -1,5 +1,5 @@
 # OUTDATED!!
-# This map will no longer be updated, so it's accuracy is not guarenteed.
+# This map will no longer be updated, so it's accuracy is not guarenteed. As such it will be made fully opensource, anyone can fork this map and update it however they'd like.
 
 # Interactive Map of VOTV
 ## Description:
